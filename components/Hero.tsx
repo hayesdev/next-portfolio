@@ -8,27 +8,32 @@ type Props = {};
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, The Name's Gregory Hayes",
-      "Guy-who-loves-RPGs.tsx",
+      "Hi, I'm Gregory Hayes",
+      "Guy-who-loves-rpgs.tsx",
       "<ButLovesToCodeMore />",
     ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 2500,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 justify-center items-center text-center overflow-hidden">
+    <div className="relative h-screen flex flex-col justify-center items-center space-y-8 text-center overflow-hidden">
       <BackgroundCircles />
       <Image
-        className="relative rounded-full mx-auto object-cover"
+        className="top-8 rounded-full"
         src="/../public/gorski-rpg.png"
-        width={200}
-        height={200}
+        width={128}
+        height={128}
         alt="rpg pic"
       />
-      <h1>
-        <span>{text}</span>
-        <Cursor cursorColor="#E7AB39" />
-      </h1>
+      <div className="z-20">
+        <h2 className="text-sm uppercase tracking-[15px] pb-2 text-gray-500">
+          Software Engineer
+        </h2>
+        <h1 className="text-5xl lg:6xl font-semi-bold px-10">
+          <span>{text}</span>
+          <Cursor cursorColor="#E7AB39" />
+        </h1>
+      </div>
     </div>
   );
 }
