@@ -1,7 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import react from "../public/react-icon.png";
+import react from "../public/react.png";
+import html from "../public/html.png";
+import css from "../public/css.png";
+import js from "../public/js.png";
 
 type Props = {};
 
@@ -23,9 +26,9 @@ function ExperienceCard({}: Props) {
         <div className="flex space-x-2 my-2 justify-center md:justify-start">
           {/* Tech used */}
           <Image className="rounded-full" src={react} width={16} height={16} />
-          <Image className="rounded-full" src={react} width={16} height={16} />
-          <Image className="rounded-full" src={react} width={16} height={16} />
-          <Image className="rounded-full" src={react} width={16} height={16} />
+          <Image className="rounded-full" src={js} width={16} height={16} />
+          <Image className="rounded-full" src={html} width={16} height={16} />
+          <Image className="rounded-full" src={css} width={16} height={16} />
         </div>
         <p className="py-4 uppercase text-gray-300">Started... -Ended...</p>
         <ul className="list-disc space-y-4 ml-5 text-lg">
