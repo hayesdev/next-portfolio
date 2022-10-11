@@ -25,17 +25,27 @@ function Header({}: Props) {
       >
         {/* social icons */}
         <SocialIcon
-          url="https://www.youtube.com"
+          url="https://www.facebook.com"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.youtube.com"
+          url="https://www.twitter.com"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.youtube.com"
+          url="https://www.linkedin.com"
+          fgColor="gray"
+          bgColor="transparent"
+        />
+        <SocialIcon
+          url="https://www.instagram.com"
+          fgColor="gray"
+          bgColor="transparent"
+        />
+        <SocialIcon
+          url="https://www.github.com"
           fgColor="gray"
           bgColor="transparent"
         />
