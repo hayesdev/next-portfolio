@@ -13,10 +13,10 @@ function BackgroundCirlces({}: Props) {
         borderRadius: ["20%", "20%", "50%", "80%", "20%"],
       }}
       transition={{ duration: 2.5 }}
-      className="relative flex justify-center items-center z-0"
+      className="relative -top-8 flex justify-center items-center z-0"
     >
       {/* use square brackets for JIT compiler */}
-      <div className="absolute border border-[#333333] rounded-full h-[220px] w-[220px] mt-52 animate-ping" />
+      <div className="absolute border border-[#333333] rounded-full h-[200px] w-[200px] mt-52 animate-ping" />
       <div className="absolute border border-[#333333] rounded-full h-[300px] w-[300px] mt-52" />
       <div className="absolute border border-[#333333] rounded-full h-[500px] w-[500px] mt-52" />
       <div className="absolute border border-[#E7AB39] rounded-full h-[650px] w-[650px] mt-52 opacity-20 animate-pulse" />
