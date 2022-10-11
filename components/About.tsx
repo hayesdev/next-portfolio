@@ -15,7 +15,7 @@ function About({}: Props) {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
         src="../gorski-rpg.png"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 object-cover rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-48 h-48 object-cover rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
       />
       <div className="space-y-10 px-0 py-4 md:px-10">
         <h4 className="text-2xl md:text-4xl font-semibold">
