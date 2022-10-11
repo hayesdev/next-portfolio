@@ -7,10 +7,10 @@ type Props = {};
 
 function ExperienceCard({}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 p-10 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] opacity-40 hover:opacity-100 transition-opacity duration-200 overflow-hidden cursor-pointer">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 p-10 w-[350px] md:w-[500px] xl:w-[800px] snap-center bg-[#292929] opacity-40 hover:opacity-100 transition-opacity duration-200 overflow-hidden cursor-pointer">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
-        transition={{ duration: 1.2 }}
+        transition={{ duration: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="w-32 h-32 xl:w-[200px] xl:h-[200px] rounded-full object-cover object-center"
@@ -20,7 +20,7 @@ function ExperienceCard({}: Props) {
       <div className="px-0 md:px-10">
         <h4 className="text-3xl font-light">CEO of HayesDev</h4>
         <p className="font-bold text-2xl mt-1">HayesDev</p>
-        <div className="flex space-x-2 my-2">
+        <div className="flex space-x-2 my-2 justify-center md:justify-start">
           {/* Tech used */}
           <Image className="rounded-full" src={gorski} width={16} height={16} />
           <Image className="rounded-full" src={gorski} width={16} height={16} />
