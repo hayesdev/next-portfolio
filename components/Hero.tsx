@@ -15,7 +15,7 @@ function Hero({}: Props) {
       "<ButLovesToCodeMore />",
     ],
     loop: true,
-    delaySpeed: 2200,
+    delaySpeed: 2000,
   });
   return (
     <div className="relative h-screen flex flex-col justify-center items-center space-y-8 text-center overflow-hidden">
