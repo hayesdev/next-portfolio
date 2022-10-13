@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
+import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -40,6 +41,9 @@ const Home: NextPage = () => {
         <Projects />
       </section>
       {/* Contact Me */}
+      <section id="contact" className="snap-start">
+        <Contact />
+      </section>
     </div>
   );
 };

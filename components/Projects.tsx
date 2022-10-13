@@ -52,7 +52,7 @@ function Projects({}: Props) {
         ))}
       </div>
       {/* Background skew effect */}
-      <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
+      <div className="w-full absolute top-[25%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
     </div>
   );
 }
