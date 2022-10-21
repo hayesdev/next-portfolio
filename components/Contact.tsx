@@ -1,9 +1,21 @@
 import React from "react";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import { useForm, SubmitHandler } from "react-hook-form";
 
 type Props = {};
 
+type FormValues = {
+  firstName: string;
+  lastName: string;
+  subject: string;
+  email: string;
+};
+
 function Contact({}: Props) {
+  const { register, handleSubmit } = useForm<FormValues>();
+  const onSubmit: SubmitHandler<FormValues> = (formData) =>
+    console.log(formData);
+
   return (
     <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 mx-auto  justify-evenly items-center">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -27,7 +39,10 @@ function Contact({}: Props) {
             <MapPinIcon className="text-[#F7AB0A] w-7- h-7" />
             <p>123 Developer Lane</p>
           </div>
-          <form className="flex flex-col space-y-2 w-fit mx-auto">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col space-y-2 w-fit mx-auto"
+          >
             <div className="flex space-x-2">
               <input className="contactInput" type="text" placeholder="Name" />
               <input
