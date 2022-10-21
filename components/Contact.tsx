@@ -5,16 +5,16 @@ import { useForm, SubmitHandler } from "react-hook-form";
 type Props = {};
 
 type FormValues = {
-  firstName: string;
-  lastName: string;
+  name: string;
   subject: string;
   email: string;
+  message: string;
 };
 
 function Contact({}: Props) {
   const { register, handleSubmit } = useForm<FormValues>();
   const onSubmit: SubmitHandler<FormValues> = (formData) =>
-    console.log(formData);
+    (window.location.href = `mailto:gthelight@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`);
 
   return (
     <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 mx-auto  justify-evenly items-center">
@@ -44,15 +44,28 @@ function Contact({}: Props) {
             className="flex flex-col space-y-2 w-fit mx-auto"
           >
             <div className="flex space-x-2">
-              <input className="contactInput" type="text" placeholder="Name" />
               <input
+                // register FormValues
+                {...register("name")}
+                className="contactInput"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                {...register("email")}
                 className="contactInput"
                 type="email"
                 placeholder="Email"
               />
             </div>
-            <input className="contactInput" type="text" placeholder="Subject" />
+            <input
+              {...register("subject")}
+              className="contactInput"
+              type="text"
+              placeholder="Subject"
+            />
             <textarea
+              {...register("message")}
               className="contactInput"
               placeholder="Enter message here..."
             />
