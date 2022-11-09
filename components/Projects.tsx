@@ -19,7 +19,7 @@ function Projects({}: Props) {
       </h3>
 
       {/* Projects */}
-      <div className="relative w-full flex overflow-scroll-x overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className="relative w-full flex overflow-scroll-x overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         {projects.map((project, index) => (
           <div
             // Children in a list should have a unique key
