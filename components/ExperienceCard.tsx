@@ -10,7 +10,7 @@ type Props = {};
 
 function ExperienceCard({}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 p-10 w-[350px] md:w-[500px] xl:w-[800px] snap-center bg-[#292929] opacity-40 hover:opacity-100 transition-opacity duration-200 overflow-hidden cursor-pointer">
+    <article className="flex flex-col rounded-lg items-center space-y-4 flex-shrink-0 p-6 mt-20 w-[280px] md:w-[500px] xl:w-[800px] snap-center bg-[#292929] opacity-40 hover:opacity-100 transition-opacity duration-200 overflow-hidden cursor-pointer">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1 }}
@@ -21,8 +21,8 @@ function ExperienceCard({}: Props) {
         alt=""
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-3xl font-light">CEO of HayesDev</h4>
-        <p className="font-bold text-2xl mt-1">HayesDev</p>
+        <h4 className="text-2xl md:text-3xl font-light">CEO of HayesDev</h4>
+        <p className="font-bold text-xl md:text-2xl mt-1">HayesDev</p>
         <div className="flex space-x-2 my-2 justify-center md:justify-start">
           {/* Tech used */}
           <Image className="rounded-full" src={react} width={16} height={16} />
@@ -31,7 +31,7 @@ function ExperienceCard({}: Props) {
           <Image className="rounded-full" src={css} width={16} height={16} />
         </div>
         <p className="py-4 uppercase text-gray-300">Started... -Ended...</p>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
+        <ul className="list-disc space-y-2 ml-5 text-lg">
           <li>Summary Points</li>
           <li>Summary Points</li>
           <li>Summary Points</li>
