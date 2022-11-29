@@ -13,7 +13,7 @@ function Projects({}: Props) {
     { title: "Roomba Game", id: 4 },
   ];
   return (
-    <div className="h-screen flex flex-col relative text-left md:flex-row max-w-full mx-auto justify-evenly items-center z-0 overflow-hidden">
+    <div className="h-screen flex flex-col relative text-left md:flex-row max-w-full min-w-[375px] mx-auto justify-evenly items-center z-0 overflow-hidden">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
@@ -24,7 +24,7 @@ function Projects({}: Props) {
           <div
             // Children in a list should have a unique key
             key={index}
-            className="w-screen h-screen flex-shrink-0 snap-center flex flex-col space-y-5 justify-center items-center p-20 md:p-44 "
+            className="w-screen h-screen flex-shrink-0 snap-center flex flex-col space-y-5 justify-center items-center p-10 md:p-44 "
           >
             <motion.img
               initial={{ y: -300, opacity: 0 }}
@@ -33,23 +33,21 @@ function Projects({}: Props) {
               viewport={{ once: true }}
               src="../mac-jumbotron.png"
               alt="project image"
-              className="w-570 h-215"
+              className="w-[285px] h-[108px] md:w-[570px] md:h-[215px] mt-20 md:mt-0"
             />
-            <div className="space-y-10 px-0 md:px10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
+            <div className="space-y-6 md:space-y-10 px-0 md:px-10 max-w-6xl">
+              <h4 className="text-2xl md:text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {project.id} of {projects.length}:
                 </span>{" "}
                 {project.title}
               </h4>
               <p className="text-lg text-center md:text-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                doloremque est aut illum neque quam libero laudantium!
-                Consequatur dolores tenetur, possimus cupiditate eos perferendis
-                asperiores aspernatur ab deserunt fugit! Maxime nam minus
-                inventore provident quis non consequatur, quos nostrum quaerat
-                eveniet, magnam reiciendis similique sit, sint quae tempora.
-                Est, totam.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+                aut modi vero a quibusdam et iure mollitia aliquid illum, rerum
+                sequi, tempore nobis maiores magni, illo minus fugit voluptatum
+                distinctio eveniet voluptate ut dolorem placeat repellendus
+                reprehenderit. Facere, vel necessitatibus!
               </p>
             </div>
           </div>
