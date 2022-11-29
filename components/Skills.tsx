@@ -18,16 +18,16 @@ function Skills({}: Props) {
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-300 text-sm">
         Hover over for more information
       </h3>
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-3 gap-5">
+        <Skill directionLeft={true} />
+        <Skill directionLeft={true} />
+        <Skill directionLeft={true} />
         <Skill directionLeft={true} />
         <Skill directionLeft={true} />
         <Skill directionLeft={true} />
         <Skill />
         <Skill />
         <Skill />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
         <Skill />
         <Skill />
         <Skill />
